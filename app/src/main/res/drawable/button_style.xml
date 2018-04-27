@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:angle="270" android:endColor="#0D76E1" android:startColor="#0D76E1" />
+			<!-- <stroke android:width="1dp" android:color="#FFFFFF"/> -->
+			<corners android:radius="8dp"/>
+			<padding android:left="10dp" android:top="10dp" android:right="10dp" android:bottom="10dp"/>
+			        
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape >
+            <gradient android:angle="270" android:startColor="#FFC2B7" android:endColor="#FFC2B7" />
+        	<!-- <stroke android:width="1dp" android:color="#F403C9"/> -->
+        	<corners android:radius="8dp"/>
+        	<padding android:left="10dp" android:right="10dp" android:top="10dp" android:bottom="10dp" />
+        	
+        </shape>
+    </item>
+    <item>
+        <shape >
+            <gradient android:startColor="#808080" android:endColor="#FFFFFF" android:angle="180" />
+            <!-- <stroke android:width="1dp" android:color="#FFFFFF" /> -->
+            <corners android:radius="8dp"/>
+            <padding android:left="10dp" android:right="10dp" android:top="10dp" android:bottom="10dp"/>
+            <!-- 
+            	gradient 逐渐变色，startColor 开始颜色， endColor 结束颜色；
+            	angle 开始渐变的角度（值只能是90的倍数，0时为左边到右渐变，90为上到下，依次逆时针类推）；
+            	storke 边框，  width 边框宽度， color 边框颜色； 
+            	corners 圆角，radius 半径， 0为直角；
+            	padding text值的相对位置。
+              -->
+        </shape>
+    </item>
+</selector>

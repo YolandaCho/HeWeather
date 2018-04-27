@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_change"
+    android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:background="#337acb">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="90px"
+                android:layout_height="27dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20px"
+                android:onClick="back"
+                android:src="@mipmap/back"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="110px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="更换城市"
+                android:textSize="40px"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:layout_marginLeft="20px"
+            android:textColor="@color/colorWhite"
+            android:text="省/直辖市/自治市/特区:"
+            android:textSize="40px" />
+
+        <Spinner
+            android:id="@+id/provinces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="40px"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="80px"
+            android:textColor="@color/colorWhite"
+            android:text="城市："
+            android:textSize="40px" />
+
+        <Spinner
+            android:id="@+id/cities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_gravity="center"
+            android:layout_marginTop="40px"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginBottom="40px"
+            android:background="@drawable/bg_btn"
+            android:textColor="@color/colorWhite"
+            android:onClick="ensure"
+            android:text="确定" />
+
+</LinearLayout>

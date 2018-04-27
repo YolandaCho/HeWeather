@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/welcome" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350px"
+        android:textColor="@color/colorWhite"
+        android:textSize="36px"
+        android:text="请选择今日活动类型：" />
+
+    <RadioGroup
+        android:id="@+id/mode_radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:paddingTop="40px"
+        android:layout_centerHorizontal="true" >
+
+        <RadioButton
+            android:id="@+id/general"
+            style="@style/RadioButtonStyles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="常规" />
+
+        <RadioButton
+            android:id="@+id/outdoors"
+            style="@style/RadioButtonStyles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="户外" />
+
+        <RadioButton
+            android:id="@+id/tour"
+            style="@style/RadioButtonStyles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旅行" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mode_radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/bg_btn"
+        android:textColor="@color/colorWhite"
+        android:onClick="start"
+        android:text="开始启动" />
+
+</RelativeLayout>
